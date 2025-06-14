@@ -1,4 +1,5 @@
 import logging
+import argparse
 
 logging.basicConfig(
     format='%(asctime)s - %(message)s',
@@ -21,4 +22,8 @@ def greet(name, lang="en"):
         raise
 
 if __name__ == "__main__":
-    logging.info(greet("SR", "ta"))
+    parser = argparse.ArgumentParser(description="Greet the user in different languages.")
+    parser.add_argument('--name', type=str, default="SR", help='Name of the user')
+    parser.add_argument('--lang', type=str, default="en", help='Language code (en, hi, ta, es)')
+    args = parser.parse_args()
+    logging.info(greet(args.name, args.lang))
