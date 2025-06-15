@@ -1,0 +1,19 @@
+{
+  "Day 1": [
+    "Set up VS Code and GitHub Copilot",
+    "Created GitHub repo and committed first script",
+    "Tested local Python CLI with argparse",
+    "Wrote unit tests with pytest",
+    "Command: git init && git remote add origin <repo> && git push -u origin main"
+  ],
+  "Day 2": [
+    "Installed Jupyter, NumPy, and Pandas",
+    "Downloaded Titanic dataset",
+    "Explored data with .head(), .describe(), .value_counts()",
+    "Filtered dataframe with conditions",
+    "Grouped by column and computed statistics",
+    "Command: pip install numpy pandas jupyter",
+    "Command: curl -O https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv",
+    "Command: jupyter notebook"
+  ]
+}
